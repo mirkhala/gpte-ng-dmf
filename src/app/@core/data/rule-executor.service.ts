@@ -175,7 +175,7 @@ export class RuleExecutorService {
 
     const insertGreetingRequestCommand = {
       'insert': {
-        'object': { 'com.myspace.customer_greeting.GreetingRequest': this.getGreetingRequest(value) },
+        'object': { 'com.myteam.customer_greeting.GreetingRequest': this.getGreetingRequest(value) },
         'out-identifier': 'greetingRequest',
         'return-object': false,
       },
@@ -184,7 +184,7 @@ export class RuleExecutorService {
 
     const insertCustomerCommand = {
       'insert': {
-        'object': { 'com.myspace.customer_greeting.Customer': this.getCustomer(value) },
+        'object': { 'com.myteam.customer_greeting.Customer': this.getCustomer(value) },
         'out-identifier': 'customer',
         'return-object': false,
       },
@@ -193,7 +193,7 @@ export class RuleExecutorService {
 
     const insertGreetingResponseCommand = {
       'insert': {
-        'object': { 'com.myspace.customer_greeting.GreetingResponse': {} },
+        'object': { 'com.myteam.customer_greeting.GreetingResponse': {} },
         'out-identifier': 'response',
         'return-object': true,
       },
@@ -229,7 +229,7 @@ export class RuleExecutorService {
     const insertDriverCommand = {
       'insert': {
         'object': {
-          'com.myspace.policy_quote.Driver': {
+          'com.myteam.policy_quote.Driver': {
             'driverName': value.name,
             'age': value.age,
             'creditRate': value.creditRate,
@@ -246,7 +246,7 @@ export class RuleExecutorService {
     const insertPolicyCommand = {
       'insert': {
         'object': {
-          'com.myspace.policy_quote.Policy': {
+          'com.myteam.policy_quote.Policy': {
             'policyType': 'AUTO',
             'vehicleYear': value.year,
             'plates': value.plates,
